@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Run Python Program') {
+        stage('Run JavaScript Program') {
             steps {
-                sh 'python3 subtraction.py'
+                sh 'node subtraction.js'
             }
         }
     }
