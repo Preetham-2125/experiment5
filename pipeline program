@@ -1,0 +1,15 @@
+pipe line{
+agent any
+stages{
+stage('compile'){
+steps{
+str'javac Helloworld.java'
+}
+}
+stage('Run'){
+steps{
+str'java Helloworld'
+}
+}
+}
+}
