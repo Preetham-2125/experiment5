@@ -2,15 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Compile') {
+        stage('Run Python Program') {
             steps {
-                sh 'javac add.java'
-            }
-        }
-
-        stage('Run') {
-            steps {
-                sh 'java Addition'
+                sh 'python3 subtraction.py'
             }
         }
     }
